@@ -29,4 +29,10 @@ public class OptionsController : MonoBehaviour {
 		PlayersPrefManager.SetDifficulty (difficultSlider.value);
 		levelManager.LoadLevel ("01a Start");
 	}
+
+    public void SetDefaults()
+    {
+        volumeSlider.value = 0.8f;
+        difficultSlider.value = 2f;
+    }
 }
